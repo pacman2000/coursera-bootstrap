@@ -1,0 +1,19 @@
+{
+  "name": "coursera-bootstrap",
+  "version": "1.0.0",
+  "description": "Proyecto coursera. Modulo 1 - Bootstrap",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pacman2000/coursera-bootstrap.git"
+  },
+  "author": "Pacman2000",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pacman2000/coursera-bootstrap/issues"
+  },
+  "homepage": "https://github.com/pacman2000/coursera-bootstrap#readme"
+}
