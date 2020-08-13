@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/pacman2000/coursera-bootstrap/issues"
   },
-  "homepage": "https://github.com/pacman2000/coursera-bootstrap#readme"
+  "homepage": "https://github.com/pacman2000/coursera-bootstrap#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
 }

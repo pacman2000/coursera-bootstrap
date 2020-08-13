@@ -1,0 +1,98 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+}
+
+/* header */ 
+header h2, header p{
+    color: rgb(102, 1, 1);
+}
+
+.carousel-item {
+    height: 90vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* main */
+main h2{
+    color: #021d7e;
+}
+
+.jumbotron{
+    background-color: #e8ebf6;
+}
+
+.btn-primary {
+    color: #ccd6f8;
+    background-color: #01264e;
+    border-color: #01264e;
+}
+
+.btn-primary:hover {
+    color: #01264e;
+    background-color: #ccd6f8;
+    border-color: #01264e;
+}
+
+.btn-secondary {
+    color: #01264e;
+    background-color: #ccd6f8;
+    border-color: #01264e;
+}
+.btn-secondary:hover {
+    color: #ccd6f8;
+    background-color: #01264e;
+    border-color: #01264e;
+}
+
+/* footer */
+footer{
+    background-color: #01264e;
+    color: #fff; 
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+}
+
+footer h3{    
+    color: #ccd6f8;
+}
+
+footer a{    
+    color: #fff;    
+    font-weight: 600;
+}
+
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: right;
+}
+
+@media (max-width: 767px) {
+    .center{        
+        align-items: flex-start;
+    }
+    
+    .right{
+        align-items: flex-start;
+    }
+}
