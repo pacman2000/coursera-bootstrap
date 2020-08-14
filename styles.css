@@ -98,3 +98,29 @@ footer a{
     color: #01264e;
     width: 40px;
 }
+
+/* services */
+.serviceTitle {
+    font-size: 3rem;
+    padding: 10px;
+    text-align: center;
+} 
+/* service table */
+.thead-color{
+    background-color: #01264e;
+    color: #ccd6f8;
+}
+/* service card */
+.cards{    
+    justify-content: space-between;
+}
+.card{
+    width: 33%;
+    margin: 10px 0px 65px 0px;    
+}
+.btn-card{  
+    width: 100%;
+}
+.card-img-top{
+    width: 100%;
+}
