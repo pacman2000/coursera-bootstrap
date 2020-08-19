@@ -157,7 +157,9 @@
     
     <!-- Javascript -->
     <!-- Jquery first, second Ppper, then Bootstrap -->
+    <!-- Todos los plugins de Bootstrap dependen de la librería JQuery, por lo tanto, JQuery debe cargarse antes de la carga de bootstrap.js -->    
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Hay otra librería que es Popper que debe cargarse antes también en caso de utilizar dropdowns, popovers y tooltips.  -->
     <script src="node_modules/popper/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         

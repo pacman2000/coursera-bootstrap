@@ -40,118 +40,169 @@
             </div>
         </div>
     </nav>    
-    
-    <main role="main">        
-        <div class="jumbotron">
-            <div class="container">
-                <!-- breadcrumb -->
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item" aria-current="page"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Services</li>
-                    </ol>
-                </nav><!-- /breadcrumb -->
 
-                <h1 class="display-3 serviceTitle">Servicios previstos para los próximos días</h1>
-                <p class="mb-5 mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum vulputate diam, eget porta odio faucibus in. Cras non sem quis dui luctus molestie. Donec condimentum est nec blandit fringilla. Donec tempor pharetra vestibulum. Maecenas id leo quis lorem cursus pharetra. Phasellus  et malesuada fames ac ante ipsum primis in faucibus. </p>
-                <div class="table-responsive">
-                    <table class="table">
-                        <thead class="thead-color">
-                          <tr>
-                            <th scope="col"><i class="fa fa-calendar pr-2"></i>Fecha / hora</th>
-                            <th scope="col"><i class="fa fa-commenting-o pr-2"></i>Evento</th>
-                            <th scope="col"><i class="fa fa-map-marker pr-2"></i>Lugar</th>
-                            <th scope="col"><i class="fa fa-globe pr-2"></i>Ciudad</th>
-                            <th scope="col"><i class="fa fa-paint-brush pr-2"></i>Artista</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td scope="row">15 May 18:00</th>
-                            <td>Fira artesanía</td>
-                            <td>Plaza Ariadna</td>
-                            <td>Barcelona</td>
-                            <td>@emphasis</td>
-                          </tr>
-                          <tr>
-                            <td scope="row">24 May 12:00</th>
-                            <td>Exposició pintura</td>
-                            <td>Sala Markus</td>
-                            <td>Manlleu</td>
-                            <td>@anastas</td>
-                          </tr>
-                          <tr>
-                            <td scope="row"> 5 Jun 21:00</th>
-                            <td>Charla coloquio</td>
-                            <td>Café Noir</td>
-                            <td>Mataro</td>
-                            <td>@lemonjuice</td>
-                          </tr>
-                          <tr>
-                            <td scope="row">10 Jun 18:00</th>
-                            <td>Fira artesanía</td>
-                            <td>Plaza Ariadna</td>
-                            <td>Barcelona</td>
-                            <td>@likeyou</td>
-                          </tr>
-                          <tr>
-                            <td scope="row">20 Jun 12:00</th>
-                            <td>Exposició fotografía</td>
-                            <td>Sala Lokus</td>
-                            <td>Badalona</td>
-                            <td>@hipnosis</td>
-                          </tr>
-                          <tr>
-                            <td scope="row"> 25 Jun 21:00</th>
-                            <td>Charla coloquio</td>
-                            <td>Café Noir</td>
-                            <td>Mataro</td>
-                            <td>@asisomos</td>
-                          </tr>
-                        </tbody>
-                    </table>
-                </div>               
-            
-            </div>
-        </div>
+    <!-- breadcrumb -->
+    <nav aria-label="breadcrumb mt-3">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Services</li>
+        </ol>
+    </nav><!-- /breadcrumb -->
 
-        <div class="container d-flex cards"> 
-            <div class="card">
-                <img class="card-img-top" src="images/art11.jpg" alt="colour paint" />                
-                <div class="card-header">
-                    <h2 class="card-title">Heading</h2>
-                    <h4 class="card-subtitle text-muted mb-3">Subtitle</h4>
+    <div class="container">   
+        <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="tabla-tab" data-toggle="tab" href="#tabla" role="tab" aria-controls="tabla" aria-selected="true">Compara</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="tarjetas-tab" data-toggle="tab" href="#tarjetas" role="tab" aria-controls="tarjetas" aria-selected="false">Tarjetas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="tabla" role="tabpanel" aria-labelledby="tabla-tab">
+                <div class="jumbotron">
+                    <div class="container">                    
+        
+                        <h1 class="display-3 serviceTitle">Servicios previstos para los próximos días</h1>
+                        <p class="mb-5 mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum vulputate diam, eget porta odio faucibus in. Cras non sem quis dui luctus molestie. Donec condimentum est nec blandit fringilla. Donec tempor pharetra vestibulum. Maecenas id leo quis lorem cursus pharetra. Phasellus  et malesuada fames ac ante ipsum primis in faucibus. </p>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="thead-color">
+                                <tr>
+                                    <th scope="col"><i class="fa fa-calendar pr-2"></i>Fecha / hora</th>
+                                    <th scope="col"><i class="fa fa-commenting-o pr-2"></i>Evento</th>
+                                    <th scope="col"><i class="fa fa-map-marker pr-2"></i>Lugar</th>
+                                    <th scope="col"><i class="fa fa-globe pr-2"></i>Ciudad</th>
+                                    <th scope="col"><i class="fa fa-paint-brush pr-2"></i>Artista</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td scope="row">15 May 18:00</th>
+                                    <td>Fira artesanía</td>
+                                    <td>Plaza Ariadna</td>
+                                    <td>Barcelona</td>
+                                    <td>@emphasis</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">24 May 12:00</th>
+                                    <td>Exposició pintura</td>
+                                    <td>Sala Markus</td>
+                                    <td>Manlleu</td>
+                                    <td>@anastas</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row"> 5 Jun 21:00</th>
+                                    <td>Charla coloquio</td>
+                                    <td>Café Noir</td>
+                                    <td>Mataro</td>
+                                    <td>@lemonjuice</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">10 Jun 18:00</th>
+                                    <td>Fira artesanía</td>
+                                    <td>Plaza Ariadna</td>
+                                    <td>Barcelona</td>
+                                    <td>@likeyou</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">20 Jun 12:00</th>
+                                    <td>Exposició fotografía</td>
+                                    <td>Sala Lokus</td>
+                                    <td>Badalona</td>
+                                    <td>@hipnosis</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row"> 25 Jun 21:00</th>
+                                    <td>Charla coloquio</td>
+                                    <td>Café Noir</td>
+                                    <td>Mataro</td>
+                                    <td>@asisomos</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>               
+                    
+                    </div>
                 </div>
-                <div class="card-body">                            
-                    <p class="card-text">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-secondary btn-card mt-3" href="#" role="button">View details &raquo;</a></p>
-                </div>
-                
             </div>
-            <div class="card">
-                <img class="card-img-top" src="images/art12.jpg" alt="black ink" />
-                <div class="card-header">
-                    <h2 class="card-title">Heading</h2>
-                    <h4 class="card-subtitle text-muted mb-3">Subtitle</h4>
-                </div>
-                <div class="card-body">                            
-                    <p class="card-text">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-secondary  btn-card mt-3" href="#" role="button">View details &raquo;</a></p>
+            <div class="tab-pane fade"  id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+                <div class="container d-flex cards"> 
+                    <div class="card">
+                        <img class="card-img-top" src="images/art11.jpg" alt="colour paint" />                
+                        <div class="card-header">
+                            <h2 class="card-title">Heading</h2>
+                            <h4 class="card-subtitle text-muted mb-3">Subtitle</h4>
+                        </div>
+                        <div class="card-body">                            
+                            <p class="card-text">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                            <p><a class="btn btn-secondary btn-card mt-3" href="#" role="button">View details &raquo;</a></p>
+                        </div>
+                        
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="images/art12.jpg" alt="black ink" />
+                        <div class="card-header">
+                            <h2 class="card-title">Heading</h2>
+                            <h4 class="card-subtitle text-muted mb-3">Subtitle</h4>
+                        </div>
+                        <div class="card-body">                            
+                            <p class="card-text">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                            <p><a class="btn btn-secondary  btn-card mt-3" href="#" role="button">View details &raquo;</a></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="images/art13.jpg" alt="graffitti" />
+                        <div class="card-header">
+                            <h2 class="card-title">Heading</h2>
+                            <h4 class="card-subtitle text-muted mb-3">Subtitle</h4>
+                        </div>
+                        <div class="card-body">                            
+                            <p class="card-text">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                            <p><a class="btn btn-secondary btn-card mt-3" href="#" role="button">View details &raquo;</a></p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="tab-pane fade"  id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+                <div class="container"> 
+                    <h1 class="display-3 serviceTitle">Comentarios</h1>
+                    <p class="mb-5 mt-1 text-muted" style="text-align: center; font-size: 1.4rem;">Aquí podéis encontrar algunos de los comentarios recibidos. </p>
+                    <div class="row mt-5 mb-5">
+                        <div class="col-md-3">
+                            <img class="card-img-top rounded-circle" src="images/talk1.jpg" alt="talking" />  
+                        </div>
+                                    
+                        <div class="col-md-9 d-flex align-items-center">
+                            <p class="">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</h4>
+                        </div>      
+                    </div>
+                    <div class="row mt-5 mb-5">
+                        <div class="col-md-3">
+                            <img class="card-img-top rounded-circle" src="images/talk2.jpg" alt="talking" />  
+                        </div>
+                                    
+                        <div class="col-md-9 d-flex align-items-center">
+                            <p class="">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</h4>
+                        </div>      
+                    </div>
+                    <div class="row mt-5 mb-5">
+                        <div class="col-md-3">
+                            <img class="card-img-top rounded-circle" src="images/talk3.jpg" alt="talking" />  
+                        </div>
+                                    
+                        <div class="col-md-9 d-flex align-items-center">
+                            <p class="">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</h4>
+                        </div>      
+                    </div>            
                 </div>
             </div>
-            <div class="card">
-                <img class="card-img-top" src="images/art13.jpg" alt="graffitti" />
-                <div class="card-header">
-                    <h2 class="card-title">Heading</h2>
-                    <h4 class="card-subtitle text-muted mb-3">Subtitle</h4>
-                </div>
-                <div class="card-body">                            
-                    <p class="card-text">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-secondary btn-card mt-3" href="#" role="button">View details &raquo;</a></p>
-                </div>
-            </div>
-        </div> 
-    </main>
+        </div>    
+    </div>
 
     <footer>
         <div class="container">
