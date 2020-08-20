@@ -47,7 +47,8 @@
             <li class="breadcrumb-item" aria-current="page"><a href="index.html">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Services</li>
         </ol>
-    </nav><!-- /breadcrumb -->
+    </nav>
+    <!-- /breadcrumb -->
 
     <div class="container">   
         <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
@@ -169,19 +170,72 @@
                 </div> 
             </div>
             <div class="tab-pane fade"  id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
-                <div class="container"> 
+                <div class="container" id="accordionComentarios"> 
                     <h1 class="display-3 serviceTitle">Comentarios</h1>
                     <p class="mb-5 mt-1 text-muted" style="text-align: center; font-size: 1.4rem;">Aquí podéis encontrar algunos de los comentarios recibidos. </p>
+
                     <div class="row mt-5 mb-5">
-                        <div class="col-md-3">
-                            <img class="card-img-top rounded-circle" src="images/talk1.jpg" alt="talking" />  
+                        <div class="col-md-12 card-header" id="headerOne">
+                            <h4>
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Comentario de A...
+                                </button>                                
+                            </h4>
                         </div>
-                                    
-                        <div class="col-md-9 d-flex align-items-center">
-                            <p class="">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</h4>
-                        </div>      
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headerOne" data-parent="#accordionComentarios">
+                            <div class="row card-body">
+                                <div class="col-md-3">
+                                    <img class="card-img-top rounded-circle" src="images/talk1.jpg" alt="talking" />  
+                                </div>
+                                            
+                                <div class="col-md-9 d-flex align-items-center">
+                                    <p class="">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</h4>
+                                </div> 
+                            </div>
+                        </div>
                     </div>
                     <div class="row mt-5 mb-5">
+                        <div class="col-md-12 card-header" id="headerTwo">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Comentario de B...
+                            </button>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headerTwo" data-parent="#accordionComentarios">
+                            <div class="row card-body">
+                                <div class="col-md-3">
+                                    <img class="card-img-top rounded-circle" src="images/talk2.jpg" alt="talking" />  
+                                </div>
+                                            
+                                <div class="col-md-9 d-flex align-items-center">
+                                    <p class="">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</h4>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5 mb-5">
+                        <div class="col-md-12 card-header" id="headerThree">
+                            <h4>
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Comentario de C...
+                                </button>                                
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="col-md-12 collapse" aria-labelledby="headerThree" data-parent="#accordionComentarios">
+                            <div class="row card-body">
+                                <div class="col-md-3">
+                                    <img class="card-img-top rounded-circle" src="images/talk3.jpg" alt="talking" />  
+                                </div>
+                                            
+                                <div class="col-md-9 d-flex align-items-center">
+                                    <p class="">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</h4>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- <div class="row mt-5 mb-5">
                         <div class="col-md-3">
                             <img class="card-img-top rounded-circle" src="images/talk2.jpg" alt="talking" />  
                         </div>
@@ -198,7 +252,7 @@
                         <div class="col-md-9 d-flex align-items-center">
                             <p class="">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</h4>
                         </div>      
-                    </div>            
+                    </div>  -->           
                 </div>
             </div>
         </div>    
