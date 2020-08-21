@@ -1,0 +1,228 @@
+/* variables */
+/* mixin */
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.button:hover {
+  text-decoration: none;
+}
+.button-jumbotron {
+  color: #ccd6f8;
+  background-color: #01264e;
+  border: 1px solid #01264e;
+}
+.button-jumbotron:hover {
+  color: #01264e;
+  background-color: #ccd6f8;
+}
+.button-orange {
+  color: #021146;
+  background-color: #f87722;
+  border-color: none;
+  box-shadow: none;
+  outline: none;
+  width: 100%;
+}
+.button-orange:hover {
+  box-shadow: 10px 5px 5px grey;
+  outline: none;
+}
+.button-orange:checked {
+  outline: none;
+}
+.button-orange:active {
+  outline: none;
+}
+.button-blue {
+  color: #01264e;
+  background-color: #ccd6f8;
+  border-color: #01264e;
+  box-shadow: none;
+  width: 100%;
+}
+.button-blue:hover {
+  color: #ccd6f8;
+  background-color: #01264e;
+}
+.button-sky {
+  color: #01264e;
+  border-color: #01264e;
+}
+.button-sky:hover {
+  color: #ccd6f8;
+  background-color: #01264e;
+}
+/* Body move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+}
+/* header */
+header h2,
+header p {
+  color: #660101;
+}
+.carousel-item {
+  height: 90vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* main */
+main h2 {
+  color: #021d7e;
+}
+.novedades h1 {
+  color: #01264e;
+}
+.jumbotron {
+  background-color: #e8ebf6;
+}
+.btn-jumbotron {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  color: #ccd6f8;
+  background-color: #01264e;
+  border: 1px solid #01264e;
+}
+.btn-jumbotron:hover {
+  text-decoration: none;
+}
+.btn-jumbotron:hover {
+  color: #01264e;
+  background-color: #ccd6f8;
+}
+.btn-blue {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  color: #01264e;
+  background-color: #ccd6f8;
+  border-color: #01264e;
+  box-shadow: none;
+  width: 100%;
+}
+.btn-blue:hover {
+  text-decoration: none;
+}
+.btn-blue:hover {
+  color: #ccd6f8;
+  background-color: #01264e;
+}
+.btn-orange {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  color: #021146;
+  background-color: #f87722;
+  border-color: none;
+  box-shadow: none;
+  outline: none;
+  width: 100%;
+}
+.btn-orange:hover {
+  text-decoration: none;
+}
+.btn-orange:hover {
+  box-shadow: 10px 5px 5px grey;
+  outline: none;
+}
+.btn-orange:checked {
+  outline: none;
+}
+.btn-orange:active {
+  outline: none;
+}
+.btn-sky {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  color: #01264e;
+  border-color: #01264e;
+}
+.btn-sky:hover {
+  text-decoration: none;
+}
+.btn-sky:hover {
+  color: #ccd6f8;
+  background-color: #01264e;
+}
+/* footer */
+footer {
+  background-color: #01264e;
+  color: #fff;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
+footer h3 {
+  color: #ccd6f8;
+}
+footer a {
+  color: #fff;
+  font-weight: 600;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: right;
+}
+@media (max-width: 767px) {
+  .center {
+    align-items: flex-start;
+  }
+  .right {
+    align-items: flex-start;
+  }
+}
