@@ -4,7 +4,8 @@
   "description": "Proyecto coursera. Modulo 1 - Bootstrap",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -o  scss/ css/"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,10 @@
     "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
     "open-iconic": "^1.1.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "ruby": "^0.6.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
   }
 }

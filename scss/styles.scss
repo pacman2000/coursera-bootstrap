@@ -1,0 +1,91 @@
+/* imports */
+@import 'contact', 'services';
+@import 'variables', 'mixins';
+
+
+/* Body move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+    padding-top: 3.5rem;
+}
+
+/* header */ 
+header h2, header p{
+    color: $ruby;
+}
+.carousel-item {
+    height: 90vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* main */
+main h2{
+    color:$royal;
+}
+.novedades h1{
+    color: $blue;
+}
+.jumbotron{
+    background-color: $lightblue;
+}
+.btn-jumbotron {
+    @include button;
+    @include button-jumbotron;
+}
+.btn-blue {
+    @include button;
+    @include button-blue;
+}
+.btn-orange{
+    @include button;
+    @include button-orange;
+}
+.btn-sky{
+    @include button;
+    @include button-sky;
+}
+  
+/* footer */
+footer{
+    background-color: $blue;
+    color: $white; 
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+}
+footer h3{    
+    color: $sky;
+}
+footer a{    
+    color: $white;    
+    font-weight: 600;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: right;
+}
+@media (max-width: 767px) {
+    .center{        
+        align-items: flex-start;
+    }    
+    .right{
+        align-items: flex-start;
+    }
+}
+  

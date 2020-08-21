@@ -1,0 +1,15 @@
+@import 'variables', 'mixins';
+
+/* contact */
+.formTitle {
+    font-size: 3rem;
+    padding: 10px;
+    text-align: center;
+} 
+.contactForm{   
+    width: 60%;
+}
+.bigicon {    
+    color: $blue;
+    width: 40px;
+}

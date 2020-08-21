@@ -1,0 +1,45 @@
+@import 'variables', 'mixins';
+
+/* services */
+.serviceTitle {
+    font-size: 3rem;
+    padding: 10px;
+    text-align: center;
+} 
+
+/* service table */
+.thead-color{
+    background-color: $blue;
+    color: $sky;
+}
+
+/* service card */
+.cards{    
+    justify-content: space-between;
+}
+.card{
+    width: 33%;
+    margin: 10px 0px 65px 0px;    
+}
+.card-img-top{
+    width: 100%;
+}
+
+/* service comentarios */
+#accordionComentarios div.card-header{
+    color: $orange;
+    background-color: $sky;
+    border: 2px solid $orange; 
+}
+#accordionComentarios div.card-header:hover{
+    box-shadow: 10px 5px 5px grey; 
+}
+#accordionComentarios button.text-accordion{
+    text-decoration: none;
+    font-weight: 200;
+    color: $orange;
+    background-color: transparent;
+    border: none; 
+    box-shadow: none;
+    outline:none;
+}

@@ -1,0 +1,67 @@
+/* buttons */
+@mixin button{
+    display: inline-block;
+    padding: .5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: .3rem;
+    cursor: pointer; 
+
+    &:hover{
+        text-decoration: none;
+    }
+}
+@mixin button-jumbotron {       
+    color: $sky;
+    background-color: $blue;
+    border: 1px solid $blue;   
+
+    &:hover{
+        color: $blue;
+        background-color: $sky;
+    }
+}
+@mixin button-orange {          
+    color: $marine;
+    background-color: $orange;
+    border-color: none;
+    box-shadow: none;
+    outline:none;
+    width: 100%;
+
+    &:hover{
+        box-shadow: 10px 5px 5px grey;
+        outline:none;
+    }
+    &:checked{
+        outline:none;
+    }
+    &:active{        
+        outline:none;
+    }
+}
+@mixin button-blue {         
+    color: $blue;
+    background-color: $sky;
+    border-color: $blue;
+    box-shadow: none;
+    width: 100%;   
+
+    &:hover{
+        color: $sky;
+        background-color: $blue;
+    }
+}
+@mixin button-sky {        
+    color: $blue;
+    border-color: $blue;          
+
+    &:hover{
+        color: $sky;
+        background-color: $blue;
+    }
+}
