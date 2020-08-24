@@ -6,11 +6,7 @@
     <meta name="description" content="">
     <title>Project Bootstrap</title>
 
-    <!-- build:css dist/index.css -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">    
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- endbuild -->
+    <link rel="stylesheet" href="dist/index.css">
 
     <!-- open-iconic icons NO FUNCIONA-->
     <!-- <link href=".\node_modules\open-iconic\font\css\open-iconic-bootstrap.min.css" rel="stylesheet"> -->    
@@ -210,36 +206,7 @@
     La librería Popper debe cargarse también antes en caso de utilizar dropdowns, popovers y tooltips.    
     -->    
 
-    <!-- build:js dist/index.js -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    
-    <script>
-        $(function () {        
-
-            $("#contactomodal").click("show.bs.modal", function (e) {
-                console.log("El modal se está mostrando");
-
-                $("#contactomodal").removeClass('btn-sky');
-                $("#contactomodal").addClass('btn-orange');
-            });
-            $("#contactomodal").click('shown.bs.modal', function (e) {
-                console.log("El modal se mostró");
-            });
-            
-            $("#closeModal").click('hide.bs.modal', function (e) {
-                console.log("El modal se está ocultando");
-            });
-            $("#closeModal").click('hidden.bs.modal', function (e) {
-                console.log("El modal se ocultó"); 
-                
-                $("#contactomodal").removeClass('btn-orange');
-                $("#contactomodal").addClass('btn-sky');
-            });
-        });
-    </script>
-    <!-- endbuild -->
+    <script src="dist/index.js"></script>
 
 </body>
 </html>

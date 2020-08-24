@@ -4,8 +4,14 @@
   "description": "Proyecto coursera. Modulo 1 - Bootstrap",
   "main": "index.html",
   "scripts": {
+    "start": "concurrently \"npm run watch:scss\" \"npm run dev\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass -o  scss/ css/"
+    "scss": "node-sass -o  scss/ css/",
+    "watch:scss": "onchange 'scss/*.scss' -- npm run scss",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin images/* --out-dir dist/images",
+    "usemin": "usemin services.html -d dist --htmlmin -o dist/services.html && usemin about.html -d dist -o dist/about.html && usemin contact.html -d dist -o dist/contact.html && usemin index.html -d dist -o dist/index.html",
+    "build": "npm run clean && npm run imagemin && npm run usemin"
   },
   "repository": {
     "type": "git",
@@ -25,6 +31,15 @@
     "ruby": "^0.6.1"
   },
   "devDependencies": {
-    "node-sass": "^4.14.1"
+    "concurrently": "^5.3.0",
+    "copyfiles": "^2.3.0",
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.2",
+    "rimraf": "^3.0.2",
+    "uglify-js": "^3.10.1",
+    "usemin": "^0.6.0",
+    "usemin-cli": "^0.6.0"
   }
 }
