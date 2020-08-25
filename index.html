@@ -210,35 +210,11 @@
     La librería Popper debe cargarse también antes en caso de utilizar dropdowns, popovers y tooltips.    
     -->    
 
-    <!-- build:js dist/index.js -->
+    <!-- build:js dist/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    
-    <script>
-        $(function () {        
-
-            $("#contactomodal").click("show.bs.modal", function (e) {
-                console.log("El modal se está mostrando");
-
-                $("#contactomodal").removeClass('btn-sky');
-                $("#contactomodal").addClass('btn-orange');
-            });
-            $("#contactomodal").click('shown.bs.modal', function (e) {
-                console.log("El modal se mostró");
-            });
-            
-            $("#closeModal").click('hide.bs.modal', function (e) {
-                console.log("El modal se está ocultando");
-            });
-            $("#closeModal").click('hidden.bs.modal', function (e) {
-                console.log("El modal se ocultó"); 
-                
-                $("#contactomodal").removeClass('btn-orange');
-                $("#contactomodal").addClass('btn-sky');
-            });
-        });
-    </script>
+    <script src="js/main.js"></script>
     <!-- endbuild -->
 
 </body>
