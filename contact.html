@@ -9,8 +9,12 @@
     <!-- build:css dist/index.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">    
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">    
     <!-- endbuild -->
+
+    <!-- font-awesome icons-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/scss/font-awesome">
 </head>
 <body>
     
@@ -64,7 +68,7 @@
                                         <label class="sr-only" for="inputFirstName">First name</label>
                                         <div class="input-group mb-2">
                                           <div class="input-group-prepend">
-                                            <div class="input-group-text"><i class="fa fa-user bigicon"></i></div>
+                                            <div class="input-group-text"><span class="oi oi-person bigicon"></span><!-- <i class="fa fa-user bigicon"></i> --></div>
                                           </div>
                                           <input type="text" name="firsName" class="form-control" id="inputFirstName" placeholder="First name">
                                         </div>
@@ -73,7 +77,7 @@
                                         <label class="sr-only" for="inputLastName">Last name</label>
                                         <div class="input-group mb-2">
                                           <div class="input-group-prepend">
-                                            <div class="input-group-text"><i class="fa fa-user bigicon"></i></div>
+                                            <div class="input-group-text"><span class="oi oi-person bigicon"></span><!-- <i class="fa fa-user bigicon"></i> --></div>
                                           </div>
                                           <input type="text" name="lastName" class="form-control" id="inputLastName" placeholder="Last name">
                                         </div>
@@ -82,16 +86,16 @@
                                         <label class="sr-only" for="inputEmail">Email Address</label>
                                         <div class="input-group mb-2">
                                           <div class="input-group-prepend">
-                                            <div class="input-group-text"><i class="fa fa-envelope bigicon"></i></div>
+                                            <div class="input-group-text"><span class="oi oi-envelope-closed bigicon"></span><!-- <i class="fa fa-envelope bigicon"></i> --></div>
                                           </div>
-                                          <input type="text" name="email" class="form-control" id="inputEmail" placeholder="Email Address">
+                                          <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email Address">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="sr-only" for="inputPhone">Phone</label>
                                         <div class="input-group mb-2">
                                           <div class="input-group-prepend">
-                                            <div class="input-group-text"><i class="fa fa-phone bigicon"></i></div>
+                                            <div class="input-group-text"><span class="oi oi-phone bigicon"></span><!-- <i class="fa fa-phone bigicon"></i> --></div>
                                           </div>
                                           <input type="text" name="phone" class="form-control" id="inputPhone" placeholder="Phone">
                                         </div>
@@ -110,7 +114,7 @@
                                         <label class="sr-only" for="inputMessage">Message</label>
                                         <div class="input-group mb-2">
                                           <div class="input-group-prepend">
-                                            <div class="input-group-text"><i class="fa fa-pencil-square-o bigicon"></i></div>
+                                            <div class="input-group-text"><span class="oi oi-pencil bigicon"></span><!-- <i class="fa fa-pencil-square-o bigicon"></i> --></div>
                                           </div>
                                           <textarea name="message" class="form-control" id="inputMessage" placeholder="Enter your message for us here. We will get back to you asap."rows="7"></textarea>
                                         </div>
@@ -172,7 +176,7 @@
     <!-- Javascript: Jquery first, second Ppper, then Bootstrap -->    
     <!-- build:js dist/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper/dist/popper.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <!-- endbuild -->

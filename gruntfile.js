@@ -61,10 +61,10 @@ module.exports = function (grunt) {
             },
             fonts: {
                 files: [{
-                    //for font-awesome
+                    //for open-iconic
                     expand: true,
                     dot: true,
-                    cwd: '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
+                    cwd: 'node_modules/open-iconic/font',
                     src: ['fonts/*.*'],
                     dest: 'dist'
                }]

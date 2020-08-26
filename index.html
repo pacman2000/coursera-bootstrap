@@ -9,8 +9,12 @@
     <!-- build:css dist/index.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">    
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">    
     <!-- endbuild -->
+
+    <!-- font-awesome icons-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/scss/font-awesome">
 
     <!-- open-iconic icons NO FUNCIONA-->
     <!-- <link href=".\node_modules\open-iconic\font\css\open-iconic-bootstrap.min.css" rel="stylesheet"> -->    
@@ -187,11 +191,11 @@
                     <p class="pb-3">Donec sed odio duiact</p>   
                     <address>
                         <p>MyPortfolio.com </p>
-                        <p><i class="fa fa-home pr-2"></i>Gran Via 652 3º</p>
+                        <p><span class="oi oi-home pr-2"></span><!-- <i class="fa fa-home pr-2"></i> -->Gran Via 652 3º</p>
                         <p>08000 - Barcelona</p>
-                        <p><i class="fa fa-phone pr-2"></i>+34 939 99 99 99</p>
+                        <p><span class="oi oi-phone pr-2"></span><!-- <i class="fa fa-phone pr-2"></i> -->+34 939 99 99 99</p>
                     </address>                 
-                    <a href="mailto:contacto@gmail.com"><i class="fa fa-envelope pr-2"></i>Send an e-mail</a>
+                    <a href="mailto:contacto@gmail.com"><span class="oi oi-envelope-closed pr-2"></span><!-- <i class="fa fa-envelope pr-2"></i> -->Send an e-mail</a>
                 </div>
                 
                 <div class="col-md-4 right  mb-5">
@@ -212,7 +216,7 @@
 
     <!-- build:js dist/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper/dist/popper.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <!-- endbuild -->

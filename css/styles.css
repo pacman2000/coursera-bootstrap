@@ -207,8 +207,5 @@ footer a {
 @media (max-width: 767px) {
   .center {
     align-items: flex-start; }
-
   .right {
     align-items: flex-start; } }
-
-/*# sourceMappingURL=styles.css.map */
